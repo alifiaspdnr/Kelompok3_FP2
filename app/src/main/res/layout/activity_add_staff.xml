@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_staff"
+    tools:context=".AddStaff"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txtDataStaff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_above="@+id/namaStaff"
+        android:text="DATA STAFF"
+        android:textSize="40dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/black"/>
+
+
+    <EditText
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:hint="Nama Staff"
+        android:background="@drawable/custom_input"
+        android:id="@+id/namaStaff"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:layout_below="@+id/namaStaff"
+        android:drawablePadding="10dp"
+        android:id="@+id/emailStaff"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Email Staff"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:layout_below="@+id/emailStaff"
+        android:drawablePadding="10dp"
+        android:id="@+id/passwordStaff"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:layout_below="@+id/passwordStaff"
+        android:drawablePadding="10dp"
+        android:id="@+id/confirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_marginTop="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="REGISTER STAFF"
+        android:id="@+id/btnAddStaff"
+        android:layout_below="@+id/confirmPassword"/>
+
+
+</RelativeLayout>
